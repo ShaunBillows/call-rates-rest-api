@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
 const ratesSchema = new mongoose.Schema({
-  "Country": {
+  Country: {
     type: String,
   },
-  "Prefix": {
+  Prefix: {
     type: String,
   },
-  "Setup": {
+  Setup: {
     type: String,
   },
   "Cost/Minute": {
@@ -19,7 +19,7 @@ const ratesSchema = new mongoose.Schema({
   "Rounding Cost Digits": {
     type: String,
   },
-  "RoundingTime": {
+  RoundingTime: {
     type: String,
   },
 });
