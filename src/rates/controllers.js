@@ -3,7 +3,7 @@ const Rate = require("./model");
 exports.readRates = async (req, res) => {
   console.log("Request recieved readRates.");
   try {
-    if (!req.query.page || !req.query.region) {
+    if (!req.query.page || !req.query.limit) {
       throw new Error("Missing fields.")
     }
     const page = parseInt(req.query.page);
