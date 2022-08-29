@@ -1,7 +1,7 @@
 require("./db/connection") //Run's database connection immediately
 const express = require("express")
 // add routes and controllers
-const userRouter = require("./user/routes");
+const userRouter = require("./rates/routes");
 const app = express();
 const port = process.env.PORT || 5001
 
