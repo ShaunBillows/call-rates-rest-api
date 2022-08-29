@@ -12,7 +12,7 @@ exports.readRates = async (req, res) => {
     } else {
       result = await Rate.find({ Country: new RegExp(req.header("region", 'i')) }); // Substring search, case insensitive.
     }
-    if (!result) {
+    if (!result || result.length === 0) {
       throw new Error("No documents found.")
     }
     console.log(result);
