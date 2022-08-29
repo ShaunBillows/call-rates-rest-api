@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.9.0",
     "mongoose": "^6.5.3"
+  }, 
+  "engines": {
+    "node": "16.15.1"
   }
 }
