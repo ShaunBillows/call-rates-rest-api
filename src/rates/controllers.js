@@ -1,9 +1,11 @@
-const e = require("express");
 const Rate = require("./model");
 
 exports.readRates = async (req, res) => {
   console.log("Request recieved readRates.");
   try {
+    if (!req.query.page || !req.query.region) {
+      throw new Error("Missing fields.")
+    }
     const page = parseInt(req.query.page);
     const limit = parseInt(req.query.limit);
     const skipIndex = (page - 1) * limit;
