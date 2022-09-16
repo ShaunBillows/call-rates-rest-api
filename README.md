@@ -1,1 +1,1 @@
-# call-rates-rest-api
+A paginated REST API for browsing international call rates by country and prefix.
